@@ -18,7 +18,7 @@ export default {
       const routes = that.$router.options.routes;
       for (let i = 0; i < that.$router.options.routes.length;) {
         if (routes[i].name === that.$route.name && i !== routes.length - 1) {
-          that.$router.push(routes[i + 1].path);
+          that.$router.replace(routes[i + 1].path);
           break;
         }
         i += 1;
@@ -29,7 +29,7 @@ export default {
       const routes = that.$router.options.routes;
       for (let i = 0; i < that.$router.options.routes.length;) {
         if (routes[i].name === that.$route.name && i !== 0) {
-          that.$router.push(routes[i - 1].path);
+          that.$router.replace(routes[i - 1].path);
           break;
         }
         i += 1;
@@ -42,6 +42,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .content{
+    box-sizing:border-box;
     min-height: 100vh;
     padding-top: 100px;
     font-size: 50px;

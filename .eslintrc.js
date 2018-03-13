@@ -30,6 +30,7 @@ module.exports = {
       js: 'never',
       vue: 'never'
     }],
+    'linebreak-style': "off",
     "no-console": "off",
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions

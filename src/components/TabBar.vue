@@ -36,14 +36,16 @@ export default {
     position: fixed;
     width: 100%;
     bottom: 0;
-    min-height: 10vh;
+    min-height: 8vh;
     color:$primary-color;
     display: flex;
+    background: #ffffff ;
     justify-content: center;
     .item{
       flex:1;
-      transition: all .5s ;
+      transition: all .3s ;
     }
+
     .active{
       background-color:$primary-color;
       color: #f0f0f0;

@@ -1,6 +1,6 @@
 # vue-slide
 
-> slide like native
+> swiper切换页面，使用vue-touch
 
 ## Build Setup
 
@@ -28,3 +28,18 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## config 
+* router
+  * index.js 
+
+```js
+ {
+      path: '/tab1', //路径
+      name: 'tab1',//路由名
+      tabBar: true,//是否为tabBar
+      icon: '',//图片图标（.png）
+      iconCls: '',//font-awesome 图标
+      component: Tab1,
+    },
+```

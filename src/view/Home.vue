@@ -1,6 +1,10 @@
 <template>
-  <my-content>{{msg}}<div style="font-size: 20px;color:#cdcdcd">try swipe!-></div></my-content>
-
+  <my-content >
+    {{msg}}
+    <div style="font-size: 20px;color:#cdcdcd">
+      try swipe!
+    </div>
+  </my-content>
 </template>
 
 <script>
@@ -10,7 +14,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      msg: 'Welcome to Home',
+      msg: 'Index',
     };
   },
   components: {
